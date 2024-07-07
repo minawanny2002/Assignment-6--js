@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #272b30;
+    
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 25px;
+    right: 0;
+    left: 0 ;
+    width: 75%;
+    margin-top: 0px;
+    z-index:9999;
+    transition: all 0.3s ease;
+
+}
+
+.main-section {
+    /* width: 100%; */
+    height: 100vh;
+    transition: all 0.3s ease;  
+
+
+}
+
+.nav-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.navbar-custom {
+    background-color: #334168;
+    border-radius: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: -25px;
+    transition: all 0.3s ease;
+
+
+}
+
+#nav {
+    
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    
+}
+
+.navbar-custom .nav-link:hover {
+    color: #00aced;
+}
+
+.navbar-custom .nav-link.active {
+    color: #00aced;
+}
+
+
+
+.card-custom {
+    background-color: #272b30;
+    color: #ffffff;
+    height: 380px;
+}
+
+.card-title-custom {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 14px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: grey;
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color: #4a6792;
+    color: white;
+    font-size: 13px;
+    width: 45px;
+    height: 25px;
+    transition: all 0.5s;
+
+}
+
+.badge-custom {
+    background-color: #363739;
+}
+
+.card-border {
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.card-border:hover .btn-custom {
+    background-color: #007bff;
+}
+
+.card-border:hover {
+    transform: scale(1.05);
+}
+
+.details-section {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    z-index: 9999999;
+}
+
+.cyan-bg {
+    background-color: #0dcaf0;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+}
+
+.game-desc {
+    font-size: 15px;
+}
+
+.details-section h5 {
+    font-weight: bold;
+}
+
+.det-btn {
+    border: 1px solid;
+    color: white;
+    transition: all 0.3s;
+}
+
+.det-btn:hover {
+    background-color: #ffc107;
+    ;
+}
+
+.close-btn {
+    color: grey;
+    font-size: 30px;
+}
+
+.close-btn:hover {
+    color: white;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #0dcaf0;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+}
